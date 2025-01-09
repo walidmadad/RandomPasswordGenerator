@@ -1,32 +1,58 @@
-body{
+body {
     background-color: rgb(236, 244, 244);
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-#container{
-    font-family: arial;
-    margin : 50px auto;
+
+#container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
     text-align: center;
     background-color: white;
     padding: 15px;
-    width : 450px;
-    height: 250px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    width: 90%; /* Utilisation d'un pourcentage pour être flexible */
+    max-width: 450px; /* Limite la largeur maximale */
+    height: auto; /* Ajuste automatiquement la hauteur */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
-button{
+
+button {
     cursor: pointer;
-    padding: 5px 35px;
+    padding: 10px 20px; /* Augmenté pour plus de confort sur mobile */
     margin: 10px;
     border: none;
     background-color: rgb(85, 107, 251);
-    color:white;
+    color: white;
     border-radius: 10px;
+    font-size: 16px; /* Police adaptée aux petits écrans */
 }
-button:hover{
+
+button:hover {
     background-color: rgb(110, 128, 247);
 }
-button:active{
+
+button:active {
     background-color: rgb(85, 107, 251);
 }
-#container h1{
+
+#container h1 {
     text-transform: uppercase;
+    font-size: 18px; /* Ajusté pour les petits écrans */
+}
+
+/* Media query pour les écrans plus petits */
+@media (max-width: 768px) {
+    #container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    #container h1 {
+        font-size: 16px; /* Réduit encore plus la taille de la police */
+    }
 }
